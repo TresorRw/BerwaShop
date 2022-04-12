@@ -1,0 +1,294 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lora', sans-serif;
+}
+a {
+	text-decoration: none;
+}
+.main-home {
+	width: 100%;
+	padding: 1%;
+}
+
+
+.log_content {
+	width: 40%;
+	padding: 1%;
+	text-align: center;
+	margin: 5% 27%;
+}
+
+.log_content h2 {
+	margin: 10px 0;
+	/*text-align: center;*/
+}
+
+.login-form {
+	width: 100%;
+	padding: 1%;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+	margin: 10px 0;
+	border-radius: 10px;
+}
+
+.login-form hr {
+	margin: 10px 0;
+	background-color: #069;
+}
+form input:focus, form select:focus {
+	transform: scale(1.005);
+	box-shadow: 0 0 2px rgba(0, 255, 0, 1);
+	color: green;
+}
+.main-content .log_content .login-form {
+	margin: 0 !important;
+	width: 120%;
+}
+form input, form select {
+	width: 90%;
+	margin: 10px 0;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 16px;
+	outline: none;
+	border: none;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+form button {
+	padding: 8px 35px;
+	font-size: 20px;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	margin: 10px 0;
+}
+
+form button.cancel {
+	background-color: #fff;
+	color: red;
+}
+form button.ok {
+	background-color: green;
+	color: #fff;
+}
+form button.cancel:hover {
+	transition: all 1s ease-in-out;
+	background-color: red;
+	color: #fff;
+}
+.login-form small {
+	color: green;
+}
+
+.message {
+	width: 20%;
+	padding: 1%;
+	text-align: center;
+	margin: 10% 40%;
+	border-radius: 5px;
+}
+
+.message.success {
+	background-color: #5DFF3E;
+}
+.message.error {
+	background-color: red;
+	color: #fff;
+}
+
+/*	 SIDEBAR    */
+.sidebar {
+	width: 300px;
+	float: left;
+	height: 100%;
+	background-color: #000033;
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.sidebar .logo-c {
+	margin: 10px 0;
+	font-size: 2em;
+	color: #fff;
+	margin-left: 1em;
+}
+
+.logo-c a {
+	font-weight: bold;
+}
+
+.sidebar .side-links a{
+	display: block;
+	padding: 15px;
+	margin-left: 1em;
+	border-radius: 5px;
+	text-decoration: none;
+	color: #fff;
+	width: 90%;
+}
+.sidebar .side-links a:hover {
+	background-color: #fff;
+	color: #000033;
+	font-weight: bold;
+}
+.sidebar .btn-logout {
+	color: red;
+	padding: 15px;
+	margin-left: 1em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.sidebar .footer p{
+	color: #fff;
+	margin-left: 1em;
+	margin-top: 1em;
+}
+.main-content {
+	width: 75%;
+	float: left;
+	margin-left: 300px;
+	padding: 10px;
+}
+
+.stock-status {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.stock-status .state {
+	width: 25%;
+	margin: 10px 30px;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgba(0, 0, 51, 0.5);
+}
+.stock-status .state:hover {
+	background-color: #000033;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 1.0);
+}
+.stock-status .state:hover > strong, .stock-status .state:hover > p {
+	color: #fff;
+}
+.main-content hr {
+	margin: 50px 0;
+}
+.state p {
+	font-size: 1em;
+	font-weight: 600;
+}
+
+.state strong {
+	margin: 0 10px;
+	font-weight: bolder;
+	font-size: 2em;
+	color: #000033;
+}
+
+/*	MANAGE PRODUCTS PAGE STYLESHEETS	*/
+
+.table {
+	width: 100%;
+	padding: 1%;
+}
+table {
+	border-collapse: collapse;
+	margin: 0 5% !important;
+}
+th, tr, td {
+	border: 1px solid #ddd;
+}
+table th{
+	background-color: #000033;
+	color: #fff;
+}
+
+th, td {
+	padding: 10px ;
+}
+
+tr:hover {
+	background-color: #ddd;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+a.btn-link {
+	padding: 5px 10px;
+	margin: 0 5px;
+	border-radius: 5px;
+}
+
+a.btn-link.up {
+	background-color: green;
+	color: #fff;
+}
+a.btn-link.del {
+	color: red;
+}
+a.btn-link.del:hover {
+	background-color: red;
+	color: #fff;
+}
+a.btn-link.up:hover {
+	background-color: #fff;
+	color: green;
+}
+.slip {
+	width: 30%;
+	padding: 1%;
+	/*text-align: center;*/
+	margin: 5% auto;
+	border-radius: 10px;
+	box-shadow: 0 0 5px #000033;
+}
+
+.slip h1 {
+	text-align: center;
+	margin: 5px 0;
+	color: #000033;
+}
+
+.slip p {
+	margin: 5px;
+}
+
+.slip p.thank {
+	margin: 10px 0;
+	text-align: center;
+}
+.table button.ok {
+	margin: 20px 30px !important;
+}
+.slip button, .table button.ok{
+	padding: 10px 30px;
+	margin: 0 20px;
+	background-color: #000033;
+	border: none;
+	color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 5px #000033;
+	cursor: pointer;
+}
+@media print {
+	.message, button , a{
+		display: none;
+	}
+	.slip {
+		width: 60%;
+	}
+}
+
+
